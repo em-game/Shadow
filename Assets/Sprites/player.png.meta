@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: cd7ab35b298ab0a48a7d719538f7b91b
+timeCreated: 1456362171
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_run_01
+    21300002: player_run_02
+    21300004: player_run_03
+    21300006: player_run_04
+    21300008: player_run_05
+    21300010: player_run_06
+    21300012: player_idle_01
+    21300014: player_idle_02
+    21300016: player_idle_03
+    21300018: player_idle_04
+    21300020: player_idle_05
+    21300022: player_idle_06
+    21300024: player_jump_01
+    21300026: player_jump_02
+    21300028: player_jump_03
+    21300030: player_jump_04
+    21300032: player_ouch_01
+    21300034: player_ouch_02
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_run_01
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_run_02
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_run_03
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_run_04
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_run_05
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_run_06
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 166
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_01
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 116
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_02
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 116
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_03
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 116
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_04
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 116
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_05
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 116
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_06
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 116
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_jump_01
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 61
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_jump_02
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 61
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_jump_03
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 61
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_jump_04
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 61
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_ouch_01
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 23}
+        - {x: -16.5, y: -16}
+        - {x: -12.5, y: -23}
+        - {x: 14.5, y: -23}
+        - {x: 16.5, y: -21}
+        - {x: 16.5, y: 23}
+    - name: player_ouch_02
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 23}
+        - {x: -16.5, y: -20}
+        - {x: -6.5, y: -23}
+        - {x: 16.5, y: -23}
+        - {x: 16.5, y: 21}
+        - {x: 15.5, y: 23}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
