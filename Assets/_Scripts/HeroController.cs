@@ -20,7 +20,7 @@ public class HeroController : MonoBehaviour {
 	//Public Instance Variables
 	public VelocityRange velocityRange;
 	public float moveForce=1000;
-	public float jumpForce=20000;
+	public float jumpForce=25000;
 	public Transform groundCheck;
 	public Transform camera;
 	public GameController gameController;
@@ -151,6 +151,6 @@ public class HeroController : MonoBehaviour {
 	}
 
 	private void _spawn(){
-		this._transform.position = new Vector3 (-263.4f, 156f, 0);
+		this._transform.position = new Vector3 (-350f, 115f, 0);
 	}
 }
