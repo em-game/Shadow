@@ -30,14 +30,12 @@ public class GameController : MonoBehaviour {
 			this._livesValue = value;
 			if (this._livesValue <= 0) {
 				this._endGame ();
-			} else {
-				this.LivesLabel.text = "Lives: " + this._livesValue;
-			}
+			} 
 		}
 	}
 		
 	// PUBLIC INSTANCE VARIABLES
-	public Text LivesLabel;
+//	public Text LivesLabel;
 	public Text ScoreLabel;
 	public Text GameOverLabel;
 	public Text HighScoreLabel;
@@ -69,7 +67,7 @@ public class GameController : MonoBehaviour {
 		//this.HighScoreLabel.text = "High Score: " + this._scoreValue;
 		//this.GameOverLabel.gameObject.SetActive (true);
 		//this.HighScoreLabel.gameObject.SetActive (true);
-		this.LivesLabel.gameObject.SetActive (false);
+	//	this.LivesLabel.gameObject.SetActive (false);
 		this.ScoreLabel.gameObject.SetActive (false);
 		//this.RestartButton.gameObject.SetActive (true);
 	}

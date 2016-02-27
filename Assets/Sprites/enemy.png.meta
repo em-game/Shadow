@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 2a043ff1f815ef6439ff4c6d93884620
-timeCreated: 1456359860
+timeCreated: 1456535250
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: enemy_0
+    21300002: enemy_1
+    21300004: enemy_2
+    21300006: enemy_3
+    21300008: enemy_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,8 +34,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +43,156 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: enemy_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 13
+        width: 53
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 37.5}
+        - {x: -16.5, y: 27.5}
+        - {x: -17.5, y: 24.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -26.5, y: -37.5}
+        - {x: 26.5, y: -37.5}
+        - {x: 26.5, y: 16.5}
+        - {x: 13.5, y: 37.5}
+    - name: enemy_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 13
+        width: 53
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: -13.5}
+        - {x: 26.5, y: 19.5}
+        - {x: 24.5, y: 33.5}
+        - {x: 12.5, y: 37.5}
+        - {x: -13.5, y: 37.5}
+        - {x: -21.5, y: 26.5}
+        - {x: -26.5, y: -15.5}
+        - {x: -26.5, y: -37.5}
+        - {x: 4.5, y: -37.5}
+        - {x: 4.5, y: -36.5}
+        - {x: -1.5, y: -26.5}
+        - {x: 16.5, y: -20.5}
+    - name: enemy_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 13
+        width: 53
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: 3.5}
+        - {x: 15.5, y: 2.5}
+        - {x: 5.5, y: -2.5}
+        - {x: 2.5, y: -2.5}
+        - {x: 7.5, y: 0.5}
+        - {x: 6.5, y: 3.5}
+        - {x: 1.5, y: 6.5}
+        - {x: -1.5, y: 6.5}
+        - {x: -3.5, y: 5.5}
+        - {x: -5.5, y: 7.5}
+        - {x: -6.5, y: 7.5}
+        - {x: -5.5, y: 7.5}
+        - {x: -2.5, y: 6.5}
+        - {x: -0.5, y: 6.5}
+        - {x: 1.5, y: 7.5}
+        - {x: 3.5, y: 5.5}
+        - {x: 6.5, y: 5.5}
+        - {x: 14.5, y: 8.5}
+        - {x: 14.5, y: 27.5}
+        - {x: 7.5, y: 37.5}
+        - {x: -13.5, y: 37.5}
+        - {x: -26.5, y: 30.5}
+        - {x: -26.5, y: -28.5}
+        - {x: -20.5, y: -37.5}
+        - {x: -3.5, y: -37.5}
+        - {x: 21.5, y: -17.5}
+        - {x: 23.5, y: -11.5}
+        - {x: 23.5, y: -2.5}
+    - name: enemy_3
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 13
+        width: 53
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 37.5}
+        - {x: -26.5, y: 21.5}
+        - {x: -26.5, y: -37.5}
+        - {x: 5.5, y: -37.5}
+        - {x: 25.5, y: -22.5}
+        - {x: 25.5, y: 34.5}
+        - {x: 16.5, y: 37.5}
+    - name: enemy_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 13
+        width: 53
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -15.5}
+        - {x: 20.5, y: -9.5}
+        - {x: 17.5, y: -8.5}
+        - {x: 14.5, y: -8.5}
+        - {x: 21.5, y: -7.5}
+        - {x: 25.5, y: -4.5}
+        - {x: 25.5, y: -2.5}
+        - {x: 23.5, y: 2.5}
+        - {x: 13.5, y: 2.5}
+        - {x: 6.5, y: -3.5}
+        - {x: 2.5, y: -3.5}
+        - {x: 3.5, y: -3.5}
+        - {x: 6.5, y: -2.5}
+        - {x: 9.5, y: 0.5}
+        - {x: 8.5, y: 3.5}
+        - {x: 5.5, y: 4.5}
+        - {x: 4.5, y: 3.5}
+        - {x: 6.5, y: 4.5}
+        - {x: 16.5, y: 8.5}
+        - {x: 16.5, y: 27.5}
+        - {x: 6.5, y: 37.5}
+        - {x: -16.5, y: 37.5}
+        - {x: -26.5, y: 12.5}
+        - {x: -26.5, y: -37.5}
+        - {x: -18.5, y: -37.5}
+        - {x: -14.5, y: -32.5}
+        - {x: -8.5, y: -37.5}
+        - {x: 9.5, y: -37.5}
     outline: []
   spritePackingTag: 
   userData: 

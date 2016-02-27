@@ -16,7 +16,7 @@ public class LightController : MonoBehaviour {
 		for (int i = 0; i < lightSpawns.Length; i++) {
 
 			int lightFlip = Random.Range (0, 2);
-			Debug.Log (lightFlip);
+
 			if (lightFlip > 0)
 				Instantiate (light, lightSpawns [i].position, Quaternion.identity);
 		}

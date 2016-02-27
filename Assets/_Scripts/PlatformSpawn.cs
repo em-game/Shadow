@@ -15,7 +15,7 @@ public class PlatformSpawn : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		originPosition = transform.position;
-		Spawn();
+		//Spawn();
 	
 	}
 	

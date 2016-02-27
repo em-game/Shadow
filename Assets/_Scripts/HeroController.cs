@@ -37,6 +37,7 @@ public class HeroController : MonoBehaviour {
 	private AudioSource _jumpSound;
 	private AudioSource _lightSound;
 
+
 	// Use this for initialization
 	void Start () {
 		// Initialize Public Instance Variables
@@ -54,8 +55,6 @@ public class HeroController : MonoBehaviour {
 		this._audioSources = gameObject.GetComponents<AudioSource>();
 		this._jumpSound = this._audioSources [0];
 		this._lightSound = this._audioSources [1];
-
-
 
 		// place the hero in the starting position
 		this._spawn ();
@@ -133,6 +132,7 @@ public class HeroController : MonoBehaviour {
 		if(other.gameObject.CompareTag("Light")){
 			this._lightSound.Play ();
 			Destroy (other.gameObject);
+
 			this.gameController.ScoreValue += 20;
 		}
 
@@ -140,6 +140,13 @@ public class HeroController : MonoBehaviour {
 			this._spawn ();
 			this.gameController.LivesValue--;
 		}
+
+		if(other.gameObject.CompareTag("Ememy")){
+			this._rigidBody2d.AddForce(new Vector2(-1000, 25000));
+			Destroy (other.gameObject);
+			this.gameController.LivesValue--;
+		}
+
 	}
 	// PRIVATE METHODS
 	private void _flip() {
@@ -151,6 +158,7 @@ public class HeroController : MonoBehaviour {
 	}
 
 	private void _spawn(){
-		this._transform.position = new Vector3 (-350f, 115f, 0);
+		this._transform.position = new Vector3 (-310f, 115f, 0);
 	}
+
 }
