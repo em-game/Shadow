@@ -49,10 +49,10 @@
      <Compile Include="Assets\_Scripts\BatAI.cs" />
      <Compile Include="Assets\_Scripts\BatController.cs" />
      <Compile Include="Assets\_Scripts\BulletForwardController.cs" />
+     <Compile Include="Assets\_Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\_Scripts\EnemyController.cs" />
      <Compile Include="Assets\_Scripts\ExplosionController.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
-     <Compile Include="Assets\_Scripts\GameScore.cs" />
-     <Compile Include="Assets\_Scripts\HealthStatus.cs" />
      <Compile Include="Assets\_Scripts\HeroController.cs" />
      <Compile Include="Assets\_Scripts\LightController.cs" />
      <Compile Include="Assets\_Scripts\PauseMenu.cs" />

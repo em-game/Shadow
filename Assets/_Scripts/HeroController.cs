@@ -39,6 +39,8 @@ public class HeroController : MonoBehaviour {
 	private AudioSource[] _audioSources;
 	private AudioSource _jumpSound;
 	private AudioSource _lightSound;
+	private float _spawnX;
+	private float _spawnY;
 
 
 	// Use this for initialization
@@ -52,6 +54,8 @@ public class HeroController : MonoBehaviour {
 		this._rigidBody2d = gameObject.GetComponent<Rigidbody2D> ();
 		this._jump = 0f;
 		this._move = 0f;
+		this._spawnX = -310f;
+		this._spawnY = 115f;
 		this._facingRight = true;
 
 		// Setup AudioSources
@@ -131,10 +135,11 @@ public class HeroController : MonoBehaviour {
 
 		//Fire bullets when the spacebar is pressed
 		if (Input.GetKeyDown ("space")) {
-			//Instantiate the first bullet
-			GameObject _bullet = (GameObject)Instantiate(bulletForward);
-			_bullet.transform.position = bulletForwardPosition.transform.position;
-
+			if (this.gameController.BulletValue > 0 && this._facingRight) {
+				//Instantiate the first bullet
+				GameObject _bullet = (GameObject)Instantiate (bulletForward);
+				_bullet.transform.position = bulletForwardPosition.transform.position;
+			}
 		}
 
 	}
@@ -145,7 +150,7 @@ public class HeroController : MonoBehaviour {
 			this._lightSound.Play ();
 
 			Destroy (other.gameObject);
-
+			this.gameController.BulletValue++;
 			this.gameController.ScoreValue += 20;
 		}
 
@@ -155,10 +160,25 @@ public class HeroController : MonoBehaviour {
 			this.gameController.LivesValue--;
 		}
 
-		if(other.gameObject.CompareTag("Enemy")){
+		if(other.gameObject.CompareTag("End")){
+
+			this.gameController.GameWin = true;
+		}
+
+		if(other.gameObject.CompareTag("Respawn")){
+
+			this._spawnX = 950f;
+			this._spawnY = 130f;
+			this.gameController.RespwanAlarm ();
+			//Destroy (other.gameObject);
+		}
+
+
+		if(other.gameObject.CompareTag("Zombie") || other.gameObject.CompareTag("Bat")){
 			PlayExplosion ();
 			Destroy (other.gameObject);
 			this.gameController.LivesValue--;
+
 		}
 
 	}
@@ -172,7 +192,7 @@ public class HeroController : MonoBehaviour {
 	}
 
 	private void _spawn(){
-		this._transform.position = new Vector3 (-310f, 115f, 0);
+		this._transform.position = new Vector3 (this._spawnX, this._spawnY, 0);
 	}
 
 	//To instantiate an explosion

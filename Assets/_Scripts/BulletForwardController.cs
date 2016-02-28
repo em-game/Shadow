@@ -14,31 +14,40 @@ public class BulletForwardController : MonoBehaviour {
 	void Start () {
 		
 		scoreUI = GameObject.FindWithTag ("Score");
-	
+		scoreUI.GetComponent<GameController> ().BulletValue--;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		//Get the bullet's current position
-		Vector2 position = transform.position;
 
-		//computer the bullet's new position
-		position = new Vector2(position.x + this.speed * Time.deltaTime, position.y);
+			//Get the bullet's current position
+			Vector2 position = transform.position;
 
-		//update the bullet's position
-		transform.position = position;
+			//computer the bullet's new position
+			position = new Vector2(position.x + this.speed * Time.deltaTime, position.y);
 
-		Vector2 max = Camera.main.ViewportToWorldPoint (new Vector2 (1,1));
+			//update the bullet's position
+			transform.position = position;
 
-		if (transform.position.x > max.x) {
-			Destroy (gameObject);
-		}
+			Vector2 max = Camera.main.ViewportToWorldPoint (new Vector2 (1,1));
+
+			if (transform.position.x > max.x) {
+				Destroy (gameObject);
+			}
+
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
 
-		if (other.gameObject.CompareTag ("Enemy")) {
+		if (other.gameObject.CompareTag ("Zombie")) {
+			PlayExplosion ();
+			scoreUI.GetComponent<GameController> ().ScoreValue += 80;
+			Destroy (gameObject);
+			Destroy (other.gameObject);
+		}
+
+		if (other.gameObject.CompareTag ("Bat")) {
 			PlayExplosion ();
 			scoreUI.GetComponent<GameController> ().ScoreValue += 100;
 			Destroy (gameObject);
