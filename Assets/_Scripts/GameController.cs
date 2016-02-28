@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	//PRIVATE METHODS ++++++++++++++++++
@@ -68,7 +68,7 @@ public class GameController : MonoBehaviour {
 		//this.GameOverLabel.gameObject.SetActive (true);
 		//this.HighScoreLabel.gameObject.SetActive (true);
 	//	this.LivesLabel.gameObject.SetActive (false);
-		this.ScoreLabel.gameObject.SetActive (false);
+//		this.ScoreLabel.gameObject.SetActive (false);
 		//this.RestartButton.gameObject.SetActive (true);
 	}
 

@@ -1,14 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\EnemyAI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.WindowsPlayer" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\LightController.cs">
     <Files>
-      <File FileName="Assets\_Scripts\PauseMenu.cs" Line="36" Column="31" />
-      <File FileName="Assets\_Scripts\TileFallingController.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\NewBehaviourScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\HeroController.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\GameController.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\StartMenu.cs" Line="17" Column="27" />
-      <File FileName="Assets\_Scripts\EnemyAI.cs" Line="10" Column="11" />
+      <File FileName="Assets\_Scripts\HeroController.cs" Line="149" Column="2" />
+      <File FileName="Assets\_Scripts\StartMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\ZombieAI.cs" Line="66" Column="2" />
+      <File FileName="Assets\_Scripts\BatAI.cs" Line="69" Column="4" />
+      <File FileName="Assets\_Scripts\ZombieController.cs" Line="17" Column="122" />
+      <File FileName="Assets\_Scripts\LightController.cs" Line="18" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

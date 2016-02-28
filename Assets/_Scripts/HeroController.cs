@@ -24,6 +24,9 @@ public class HeroController : MonoBehaviour {
 	public Transform groundCheck;
 	public Transform camera;
 	public GameController gameController;
+	public GameObject bulletForward;
+	public GameObject bulletForwardPosition;
+	public GameObject Explosion;
 
 	// PRIVATE  INSTANCE VARIABLES
 	private Animator _animator;
@@ -125,24 +128,35 @@ public class HeroController : MonoBehaviour {
 
 		// Apply the forces to the player
 		this._rigidBody2d.AddForce(new Vector2(forceX, forceY));
+
+		//Fire bullets when the spacebar is pressed
+		if (Input.GetKeyDown ("space")) {
+			//Instantiate the first bullet
+			GameObject _bullet = (GameObject)Instantiate(bulletForward);
+			_bullet.transform.position = bulletForwardPosition.transform.position;
+
+		}
+
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
 
 		if(other.gameObject.CompareTag("Light")){
 			this._lightSound.Play ();
+
 			Destroy (other.gameObject);
 
 			this.gameController.ScoreValue += 20;
 		}
 
 		if(other.gameObject.CompareTag("Death")){
+			
 			this._spawn ();
 			this.gameController.LivesValue--;
 		}
 
-		if(other.gameObject.CompareTag("Ememy")){
-			this._rigidBody2d.AddForce(new Vector2(-1000, 25000));
+		if(other.gameObject.CompareTag("Enemy")){
+			PlayExplosion ();
 			Destroy (other.gameObject);
 			this.gameController.LivesValue--;
 		}
@@ -159,6 +173,14 @@ public class HeroController : MonoBehaviour {
 
 	private void _spawn(){
 		this._transform.position = new Vector3 (-310f, 115f, 0);
+	}
+
+	//To instantiate an explosion
+	void PlayExplosion(){
+		GameObject _explosion = (GameObject)Instantiate (Explosion);
+
+		//set the position of the explosion
+		_explosion.transform.position = transform.position;
 	}
 
 }

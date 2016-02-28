@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class LightController : MonoBehaviour {
-
+	//public instance varibales
 	public Transform[] lightSpawns;
 	public GameObject light;
+
 
 	// Use this for initialization
 	void Start () {
