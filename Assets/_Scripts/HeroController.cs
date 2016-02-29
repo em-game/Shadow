@@ -19,8 +19,8 @@ public class VelocityRange{
 public class HeroController : MonoBehaviour {
 	//Public Instance Variables
 	public VelocityRange velocityRange;
-	public float moveForce=1000;
-	public float jumpForce=25000;
+	public float moveForce;
+	public float jumpForce;
 	public Transform groundCheck;
 	public Transform camera;
 	public GameController gameController;
@@ -39,6 +39,7 @@ public class HeroController : MonoBehaviour {
 	private AudioSource[] _audioSources;
 	private AudioSource _jumpSound;
 	private AudioSource _lightSound;
+	private AudioSource _bgm;
 	private float _spawnX;
 	private float _spawnY;
 
@@ -62,7 +63,9 @@ public class HeroController : MonoBehaviour {
 		this._audioSources = gameObject.GetComponents<AudioSource>();
 		this._jumpSound = this._audioSources [0];
 		this._lightSound = this._audioSources [1];
+		this._bgm = this._audioSources [2];
 
+		this._bgm.Play ();
 		// place the hero in the starting position
 		this._spawn ();
 	}
@@ -71,8 +74,9 @@ public class HeroController : MonoBehaviour {
 	void FixedUpdate () {
 
 		Vector3 currentPosition = new Vector3 (this._transform.position.x, this._transform.position.y, -10f);
-		this.camera.position = currentPosition;
-
+		if (currentPosition.x > -330 && currentPosition.y > -250 && currentPosition.y < 190) {
+			this.camera.position = currentPosition;
+		}
 		this._isGrounded = Physics2D.Linecast (this._transform.position, 
 			this.groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
 		Debug.DrawLine (this._transform.position, this.groundCheck.position);
