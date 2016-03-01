@@ -1,8 +1,8 @@
 ﻿/*
-Source file name : https://github.com/em-game/Shadow.git
+Source file name : BulletForwardController.cs
 Author : Eunmi Han(300790610)
 Date last Modified : Feb 29, 2016
-Program Description : 2D Platformer Game 
+Program Description : control bullet moving and score
 Revision History : 1.01 - Initial Setup
                    1.02 - Add collision
                    1.03 - Add scoring
@@ -66,9 +66,18 @@ public class BulletForwardController : MonoBehaviour {
 			Destroy (other.gameObject);
 		}
 
-		if (other.gameObject.CompareTag ("ground") || other.gameObject.CompareTag ("Player") || other.gameObject.CompareTag ("Light")) {
+		if (other.gameObject.CompareTag ("ground")){
 			Destroy (gameObject);
 		}
+
+		if (other.gameObject.CompareTag ("Player")){
+			Destroy (gameObject);
+		}
+
+		if (other.gameObject.CompareTag ("Light")){
+			Destroy (gameObject);
+		}
+
 	}
 
 	//To instantiate an explosion

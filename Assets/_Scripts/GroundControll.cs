@@ -1,8 +1,8 @@
 ﻿/*
-Source file name : https://github.com/em-game/Shadow.git
+Source file name : GroundControll.cs
 Author : Eunmi Han(300790610)
 Date last Modified : Feb 29, 2016
-Program Description : 2D Platformer Game 
+Program Description : If bullet touches the ground, bullet is disappeared. 
 Revision History : 1.01 - Initial Setup
                    1.02 - Add collision
                    

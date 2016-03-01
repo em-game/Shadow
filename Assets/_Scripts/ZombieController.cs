@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/*
+Source file name : ZombieAI
+Author : Eunmi Han(300790610)
+Date last Modified : Feb 29, 2016
+Program Description : Set the position of zombie
+Revision History : 1.01 - Initial Setup
+                   1.02 - Set the position of Zombie
+                   
+Last Modified by Eunmi Han
+*/
+using UnityEngine;
 using System.Collections;
 
 public class ZombieController : MonoBehaviour {

@@ -1,8 +1,8 @@
 ﻿/*
-Source file name : https://github.com/em-game/Shadow.git
+Source file name : StartMenu.cs
 Author : Eunmi Han(300790610)
 Date last Modified : Feb 29, 2016
-Program Description : 2D Platformer Game 
+Program Description : For the start menu 
 Revision History : 1.01 - Initial Setup and add button to go game screen
 
 

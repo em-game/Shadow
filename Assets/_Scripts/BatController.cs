@@ -1,8 +1,8 @@
 ﻿/*
-Source file name : https://github.com/em-game/Shadow.git
+Source file name : BatController.cs
 Author : Eunmi Han(300790610)
 Date last Modified : Feb 29, 2016
-Program Description : 2D Platformer Game 
+Program Description : Attach bat object to screen 
 Revision History : 1.01 - Initial Setup
                    1.02 - set the position of bat
                    
