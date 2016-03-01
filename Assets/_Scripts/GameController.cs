@@ -1,4 +1,16 @@
-﻿using UnityEngine;
+﻿/*
+Source file name : https://github.com/em-game/Shadow.git
+Author : Eunmi Han(300790610)
+Date last Modified : Feb 29, 2016
+Program Description : 2D Platformer Game 
+Revision History : 1.01 - Initial Setup
+                   1.02 - Add score and live
+                   1.03 - Add bullet count
+                   1.04 - Add Heath Panel
+                   1.05 - Add won status
+Last Modified by Eunmi Han
+*/
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
